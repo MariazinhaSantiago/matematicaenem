@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INÍCIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">CONTEÚDOS</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <img src="https://i.pinimg.com/originals/77/07/24/770724bc78f7ccb5f8f60b23877cef23.jpg" alt="Italian Trulli">
+  <div class="w3-display-middle w3-center">
+   
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black"> Vamos conhecer as matérias de matemática mais recorrentes no Enem? </a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CONTEÚDOS</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Básico</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Intermediário</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Avançado</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Função do 1º grau</b> 
+      <p class="w3-text-grey">As funções matemáticas correspondem às relações entre dados (normalmente, entre conjuntos).
+        É o que acontece quando definimos uma coordenada com um valor e a outra com um número diferente. 
+        A partir dessas informações, é possível traçar um ponto e, depois, um gráfico.
+        As funções podem ser de 1º grau (linhas retas) Também podem envolver equações de primeiro e de segundo grau.  
+        No Enem, esse é o tema mais cobrado porque as equações fazem parte do nosso cotidiano, certo? Então, vale caprichar nos estudos!
+        </p>
+        <a href="https://www.youtube.com/watch?v=hgKTmAO-k7E">CLique aqui para assistir uma vídeo-aula</a>
+      <hr>
+   
+      <h1><b>Regra de 3 simples e composta </b> </h1>
+      <p class="w3-text-grey">A Regra de Três é uma ferramenta simples, mas muito poderosa. Ela é utilizada para descobrir um valor desconhecido, que segue a mesma razão de outros já conhecidos. Em necessariamente existem 3 valores e uma incógnita
+    </p>
+    <a href="https://www.youtube.com/watch?v=tGocfdedEm4">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+      
+      <h1><b>Matemática básica </b> </h1>
+      <p class="w3-text-grey">Já passou por aquele momento de acertar o raciocínio todo de uma questão e no fim perceber que por um erro de multiplicação/divisão perdeu a questão? Por este e diversos outros motivos, a matemática básica é importante no Enem. É aconselhável revisar, adição, subtração, multiplicação de divisões, unidades de medidas, Fatoração, MMC, MDC para garantir mais pontos no fim da prova.
+    </p>
+    <a href="https://www.youtube.com/watch?v=uaYFrtduFmI">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+
+     
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Geometria</b> </h1>
+      <p class="w3-text-grey">É a área da matemática que engloba os desenvolvimentos básicos e tem como objetivo identificar e diferenciar os sólidos geométricos e outros objetos. As questões de Geometria são muito frequentes, em especial, área, perímetro e volume de figuras e sólidos geométricos; trigonometria e geometria analítica. 
+    </p>
+    <a href="https://www.youtube.com/watch?v=ymqKfiqN13o">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+   
+      <h1><b>Análise Combinatória</b> </h1>
+      <p class="w3-text-grey">É um conteúdo bastante recorrente no Enem, que costuma cobrar desde o princípio multiplicativo, conhecido também como princípio fundamental da contagem, até os agrupamentos (permutação, combinação e arranjo). É a área da Matemática que tem como objetivo contar o número de agrupamentos possíveis para determinadas situações. É bastante comum ver aplicações desse tema no nosso dia a dia, como em jogos de loteria ou no estudo das probabilidades, genética, entre outras aplicações.
+    </p>
+    <a href="https://www.youtube.com/watch?v=g1nDzBRiF34">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+      
+      <h1><b>Probabilidade</b> </h1>
+      <p class="w3-text-grey">FrAs questões com probabilidade no Enem costumam fundamentar-se na interpretação e utilizam o cálculo das chances de um evento acontecer. Em geral, baseiam-se em ideias simples que não exigem um grande conhecimento de fórmulas matemáticas. Normalmente as situações propostas tratam de experimentos aleatórios e também de casos equiprováveis, isto é, os eventos possuem probabilidades iguais de ocorrência.
+    </p>
+    <a href="https://www.youtube.com/watch?v=kHNXWgkmwxs">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+
+      <h1><b>Razão e Proporção</b> </h1>
+      <p class="w3-text-grey">Todo ano você encontra muitas questões que envolvem o cálculo de Escalas, Razão e Proporção nas provas. São conteúdos muito comuns no Enem e em todos os vestibulares.
+        E, estes temas caem  não só nas questões de matemática e física, mas também nas de geografia, química e biologia. Afinal, a Razão pode ser aplicada para resolver diversos tipos de problemas. Escalas acontecem direto nas questões de Geografia, sobre Escalas Cartográficas.
+        </p>
+        <a href="https://www.youtube.com/watch?v=JVghshpOjc0">CLique aqui para assistir uma vídeo-aula</a>
+
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Matemática financeira</b> </h1>
+      <p class="w3-text-grey">A matemática financeira é um dos assuntos cobrados no Enem. Entre as 45 questões de matemática, um conteúdo comum é os juros compostos. Por isso, é importante entender o que é esse tipo de juros e qual fórmula utilizar para calculá-lo.
+    </p>
+    <a href="https://www.youtube.com/watch?v=w_kRAihToMY">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+   
+      <h1><b>Juros compostos</b> </h1>
+      <p class="w3-text-grey">Ao contrário do Juros simples, onde os juros são calculado em cima do capital inicial, os juros compostos são calculados em cima dos próprios juros. Isto significa que, no regime de juros compostos, os juros acumulados anteriormente são usados para o cálculo dos rendimentos do período seguinte e assim por diante. Por este motivo, os juros compostos oferecem maior rentabilidade e são mais utilizados no sistema financeiro do que o regime por juros simples.
+    </p>
+    <a href="https://www.youtube.com/watch?v=2y8LnQ-uLlI">CLique aqui para assistir uma vídeo-aula</a>
+
+      <hr>
+    
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">SOBRE</h1>
+    <p>O site foi criado com a finalidade de auxiliar os vestibulandos ou estudantes com as matérias mais recorrentes no Exame Nacional do Ensido Médio (Enem). Para isso, nossa equipe realizou uma extensa pesquisa e análises para separar os melhores conteúdos na internet para você! E o melhor, tudo 100% gratuito. Através destes assuntos listados e um bom rendimento sobre eles é possível garantir uma boa nota na área de Matemática no Enem e arrasar no SISU 
+    </p>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
